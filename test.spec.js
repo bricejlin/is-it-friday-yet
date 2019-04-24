@@ -5,9 +5,9 @@ test('It returns correct answer', done => {
   request(app)
     .get('/')
     .end((err, res) => {
-      shouldBeFriday = (new Date()).getDay() === 5;
+      shouldBeTuesday = (new Date()).getDay() === 2;
 
-      expect(res.text).toBe(shouldBeFriday ? 'Yes' : 'No')
+      expect(res.body.response).toBe(shouldBeTuesday ? 'Yes' : 'No')
       expect(res.statusCode).toBe(200)
       done()
     })
