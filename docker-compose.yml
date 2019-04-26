@@ -1,6 +1,6 @@
 version: '3'
 services:
   backend:
-    build: poggin/is-it-tuesday-yet:latest
+    image: poggin/is-it-tuesday-yet:latest
     ports:
      - "80:80"
