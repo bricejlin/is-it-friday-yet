@@ -1,6 +1,6 @@
 version: '3'
 services:
   backend:
-    build: .
+    build: https://hub.docker.com/r/poggin/is-it-tuesday-yet:latest
     ports:
      - "80:80"
