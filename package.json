@@ -1,7 +1,7 @@
 {
   "name": "is-it-tuesday-yet",
   "version": "1.0.0",
-  "description": "",
+  "description": "Some desc",
   "main": "src/index.js",
   "scripts": {
     "start": "pm2 start src/index.js -i max",
