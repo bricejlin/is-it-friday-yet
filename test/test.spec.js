@@ -7,7 +7,7 @@ test('It returns correct answer', done => {
     .end((err, res) => {
       shouldBeTuesday = (new Date()).getDay() === 2;
 
-      expect(res.body.response).toBe(shouldBeTuesday ? 'Yes' : 'No')
+      expect(res.body.response).toBe(shouldBeTuesday ? 'Yaas' : 'Noo')
       expect(res.statusCode).toBe(200)
       done()
     })
