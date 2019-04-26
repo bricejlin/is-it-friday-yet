@@ -2,9 +2,9 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  const isItFriday = (new Date()).getDay() === 5
+  const isItTuesday = (new Date()).getDay() === 2
   res.send({
-    response: isItFriday ? 'Yas' : 'No'
+    response: isItTuesday ? 'Yas' : 'No'
   })
 })
 
