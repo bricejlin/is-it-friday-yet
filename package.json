@@ -4,16 +4,13 @@
   "description": "Some desc",
   "main": "src/index.js",
   "scripts": {
-    "start": "pm2 start src/index.js -i max",
-    "restart": "pm2 restart all",
-    "kill": "pm2 kill",
+    "start": "node src/index.js",
     "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
-    "pm2": "^3.5.0"
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "jest": "^24.7.1",
